@@ -10,14 +10,14 @@ Home = st.Page(
 Acercade = st.Page(
     page= "Vistas/Acercade.py",
     title= "Acerca de",
-    icon= ":material/acount_circle:",
+    icon= ":material/account_circle:",
     
 )
 
 project_1_page = st.Page(
     page= "Vistas/Ventas.py",
     title= "Ventas",
-    icon= ":material/acount_circle:",
+    icon= ":material/account_circle:",
 )
 
 project_2_page = st.Page(
