@@ -27,9 +27,4 @@ with st.container():
             st.write("asdasdasdadasdadasdasdasdasdjskdblksahvkdjbvflkajsdbvlasjhdbcljsdbclkasdhbclsahbdclasjdkbclasdbclashdbclajshcdvljashdcjlashdbcljasdhbclashdbclsajdch sa")
             st.write("[Saber mas>](https://streamlit.io/)")
 
-        with r_columna:
-            path = get ("./animation/ani.json")
-            st_lottie(path)
-            
-            url = get_url("https://lottie.host/8611e424-5454-46ef-acc1-dbe8a675c7ed/GenBO7VdlL.json")
-            st_lottie(url)
+      
