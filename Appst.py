@@ -33,7 +33,7 @@ pg = st.navigation(
     }
 )
 
-st.logo("Img/robot")
+st.logo("Img/robot.png")
 st.sidebar.markdown("Elaborado con el wacho por [Streamlit](https://streamit.io/gallery)")
 
 pg.run()
