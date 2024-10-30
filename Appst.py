@@ -17,7 +17,7 @@ Acercade = st.Page(
 project_1_page = st.Page(
     page= "Vistas/Ventas.py",
     title= "Ventas",
-    icon= ":material/shopping_Cart:",
+    icon= ":material/account_circle:",
 )
 
 project_2_page = st.Page(
