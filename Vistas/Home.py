@@ -1,4 +1,12 @@
 import streamlit as  st
+from streamlit_lottie import st_lottie
+import json 
+import requests
+
+
+def get (path:str):
+    with open(path, "r") as p:
+        return json.load(p)
 
 #Inicio de pagina
 with st.container():
@@ -38,7 +46,8 @@ Usas herramientas de software antiguas o poco eficientes o procesos en los que u
             """
     )
     with imagen_columna:
-        st.image("Img/robot.png")
+        path= get ("animacion/ani.json")
+        st_lottie(path)
     
 
 #Servicios
@@ -62,4 +71,45 @@ with texto_columna:
     )
     st.write("[Ver servicios >](https://share.streamlit.io/user/diether28)")
     
-    with imagen_columna: st.image("Img/robot.png")
+    with imagen_columna: 
+         path= get ("animacion/ani.json")
+         st_lottie(path)
+    
+    
+    
+    
+    
+#contactos
+    
+st.subheader("Contactos")
+    
+form = st.form(key="home", clear_on_submit=True)
+    
+with form: 
+    input_nombre= st.text_input("Nombre:", placeholder="Escriba su nombre")
+    input_correo = st.text_input("Correo electronico", placeholder="Escriba su correo electronico")
+    input_area= st.text_area("Comentario")
+    button_submit= form.form_submit_button("Enviar")
+        
+
+#footer
+
+with st.container():
+    st.write("---")
+    p1,p2,p3 = st.columns((3))
+    with p1: 
+        st.subheader("Contactos:")
+        st.write("***Direccion:*** Juigalpa, Chontales-Nicaragua")
+        st.write("***Telefono:*** +(505)0000-0000")
+    
+    with p2: 
+        st.subheader("Servicios")
+        st.write("Diseño de aplicaciones")
+        st.write("Automatizacion de proceso")
+        st.write("Visualizacion de datos")
+        
+    with p3:
+        st.subheader("Redes Sociales")
+        st.markdown("[Youtube](https://www.youtube.com/watch?v=UI4f4iiVT6c)")
+        st.markdown("[Facebook](https://www.youtube.com/watch?v=UI4f4iiVT6c)")
+        st.markdown("[Instagram](https://www.youtube.com/watch?v=UI4f4iiVT6c)")
