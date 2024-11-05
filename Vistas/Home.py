@@ -110,6 +110,6 @@ with st.container():
         
     with p3:
         st.subheader("Redes Sociales")
-        st.markdown("[Youtube](https://www.youtube.com/watch?v=UI4f4iiVT6c)")
+        st.markdown("[YOUTUBE](https://www.youtube.com/watch?v=UI4f4iiVT6c)")
         st.markdown("[Facebook](https://www.youtube.com/watch?v=UI4f4iiVT6c)")
         st.markdown("[Instagram](https://www.youtube.com/watch?v=UI4f4iiVT6c)")
